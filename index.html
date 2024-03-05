@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Relationship Management</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="customer.html">Customers</a>
+            <a href="interaction.html">Interactions</a>
+            <a href="task.html">Tasks</a>
+            <a href="contact.html">Contacts</a>
+        </nav>
+        
+        <!-- Add Customer Form -->
+        <div class="form">
+            <h2><u>Add Customer</u></h2>
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="email" placeholder="Email">
+            <button onclick="addCustomer()">Add Customer</button>
+        </div>
+
+        <!-- Customer List -->
+        <div class="customer-list">
+            <h2><u>Customer List</u></h2>
+            <ul id="customer-list">
+                <!-- Customer items will be added dynamically here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
